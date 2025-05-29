@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.pipenv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# PyCharm specific files
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pygame assets cache (optional, if any generated files)
+*.log
+*.tmp
+*.bak
+
+# Compiled binaries (if any)
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.pyc
+*.pyo
+*.pyd
+
+# Local config files
+*.env
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
