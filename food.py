@@ -13,7 +13,12 @@ class Food:
             snake_body (list): List of coordinates occupied by the snake.
         """
         self.position = self._generate_position(snake_body)
-
+        scale_factor = 1.8
+        image_size = int(GRID_SIZE * scale_factor)
+        self.image = pygame.image.load("assets/peso.png").convert_alpha()
+        self.image = pygame.transform.scale(self.image, (image_size, image_size))
+        self.image_offset = (image_size - GRID_SIZE) // 2
+        
     def _generate_position(self, snake_body):
         """
         Generates a valid random position for the food.
@@ -40,5 +45,8 @@ class Food:
             surface (pygame.Surface): The surface to draw the food on.
         """
         x, y = self.position
-        rect = pygame.Rect(x * GRID_SIZE, y * GRID_SIZE, GRID_SIZE, GRID_SIZE)
-        pygame.draw.rect(surface, RED, rect)
+        draw_x = x * GRID_SIZE - self.image_offset
+        draw_y = y * GRID_SIZE - self.image_offset
+        surface.blit(self.image, (draw_x, draw_y))
+        #rect = pygame.Rect(x * GRID_SIZE, y * GRID_SIZE, GRID_SIZE, GRID_SIZE)
+        #pygame.draw.rect(surface, RED, rect)
