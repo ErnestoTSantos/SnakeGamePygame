@@ -7,7 +7,9 @@ from settings import (
     UP, DOWN, LEFT, RIGHT, WHITE
 )
 
-from settings import BROWN_DARK, BROWN_LIGHT, GREEN
+from settings import BROWN_DARK
+from settings import BROWN_LIGHT
+from settings import GREEN
 
 
 
@@ -48,7 +50,9 @@ class Game:
                     self._trigger_game_over()
 
             self._render()
-            self.clock.tick(FPS)
+            length = len(self.snake.body)
+            speed = min(60, FPS + (length - 5) * 2)
+            self.clock.tick(speed)
 
     def _handle_events(self):
         """Handles keyboard and window events."""
@@ -99,12 +103,16 @@ class Game:
     def _draw_game_over(self):
         """Draws the Game Over message and restart instructions."""
         game_over_text = self.font.render("Game Over", True, WHITE)
+        score = len(self.snake.body) - 3
+        score_text = pygame.font.SysFont(None, 36).render(f"Score: {score}", True, WHITE)
         restart_text = pygame.font.SysFont(None, 32).render("Press R to restart", True, WHITE)
 
         rect1 = game_over_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 20))
+        rect_score = score_text.get_rect(center=(SCREEN_WIDTH // 2, 90))
         rect2 = restart_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 20))
 
         self.screen.blit(game_over_text, rect1)
+        self.screen.blit(score_text, rect_score)
         self.screen.blit(restart_text, rect2)
 
     def _draw_start_screen(self):
@@ -115,7 +123,7 @@ class Game:
 
     def _draw_dynamic_background(self):
         """Draws a static brown checkerboard with green borders."""
-        cell_size = 80  # maior pra destacar
+        cell_size = 20
         for x in range(0, SCREEN_WIDTH, cell_size):
             for y in range(0, SCREEN_HEIGHT, cell_size):
                 if (x // cell_size + y // cell_size) % 2 == 0:

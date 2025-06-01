@@ -1,5 +1,7 @@
 import pygame
-from settings import GRID_SIZE, GREEN, DARK_GREEN, SCREEN_WIDTH, SCREEN_HEIGHT
+from settings import GRID_SIZE
+from settings import SCREEN_WIDTH
+from settings import SCREEN_HEIGHT
 
 class Snake:
     """Represents the snake in the game."""
@@ -14,12 +16,12 @@ class Snake:
         scale_factor = 4
         image_size = int(GRID_SIZE * scale_factor)
         
-        self.segment_image = pygame.image.load("assets/rand.png").convert_alpha()
+        self.segment_image = pygame.image.load("assets/images/rand.png").convert_alpha()
         self.segment_image = pygame.transform.scale(self.segment_image, (image_size, image_size))
 
         self.image_offset = (image_size - GRID_SIZE) // 2
 
-        self.grow_sound = pygame.mixer.Sound("assets/Birl.mp3")
+        self.grow_sound = pygame.mixer.Sound("assets/sounds/Birl.mp3")
 
     def move(self):
         """Moves the snake in the current direction and grows if necessary."""
@@ -78,7 +80,6 @@ class Snake:
             draw_x = x * GRID_SIZE - self.image_offset
             draw_y = y * GRID_SIZE - self.image_offset
 
-            # Determina o ângulo com base na direção
             angle = 0
             if direction == (1, 0):   
                 angle = 270

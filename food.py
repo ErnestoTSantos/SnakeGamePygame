@@ -1,6 +1,9 @@
 import pygame
 import random
-from settings import GRID_SIZE, RED, SCREEN_WIDTH, SCREEN_HEIGHT
+
+from settings import GRID_SIZE
+from settings import SCREEN_WIDTH
+from settings import SCREEN_HEIGHT
 
 class Food:
     """Represents the food in the game."""
@@ -13,9 +16,9 @@ class Food:
             snake_body (list): List of coordinates occupied by the snake.
         """
         self.position = self._generate_position(snake_body)
-        scale_factor = 1.8
+        scale_factor = 2
         image_size = int(GRID_SIZE * scale_factor)
-        self.image = pygame.image.load("assets/peso.png").convert_alpha()
+        self.image = pygame.image.load("assets/images/peso.png").convert_alpha()
         self.image = pygame.transform.scale(self.image, (image_size, image_size))
         self.image_offset = (image_size - GRID_SIZE) // 2
         
@@ -48,5 +51,3 @@ class Food:
         draw_x = x * GRID_SIZE - self.image_offset
         draw_y = y * GRID_SIZE - self.image_offset
         surface.blit(self.image, (draw_x, draw_y))
-        #rect = pygame.Rect(x * GRID_SIZE, y * GRID_SIZE, GRID_SIZE, GRID_SIZE)
-        #pygame.draw.rect(surface, RED, rect)
