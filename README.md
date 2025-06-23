@@ -18,23 +18,23 @@ Essa customização dá um toque de humor e originalidade ao projeto, sem compro
 
 ## Funcionalidades
 
-Jogabilidade clássica da cobrinha.
+- Jogabilidade clássica da cobrinha.
 
-Design orientado a objetos para facilitar a manutenção.
+- Design orientado a objetos para facilitar a manutenção.
+ 
+- Código limpo e bem documentado com docstrings em inglês.
 
-Código limpo e bem documentado com docstrings em inglês.
+- Fundo em estilo retrô com padrão xadrez marrom e bordas verdes.
 
-Fundo em estilo retrô com padrão xadrez marrom e bordas verdes.
+- Células da cobrinha e da comida menores que os quadrados do fundo, criando um efeito de contorno elegante.
 
-Células da cobrinha e da comida menores que os quadrados do fundo, criando um efeito de contorno elegante.
+- O jogo começa após pressionar uma tecla.
 
-O jogo começa após pressionar uma tecla.
+- Exibe a mensagem "Game Over" sem fechar a janela.
 
-Exibe a mensagem "Game Over" sem fechar a janela.
+- Opção de reiniciar o jogo após perder.
 
-Opção de reiniciar o jogo após perder.
-
-Controles responsivos e animações suaves.
+- Controles responsivos e animações suaves.
 
 ---
 
