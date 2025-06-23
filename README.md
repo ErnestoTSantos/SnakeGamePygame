@@ -1,46 +1,65 @@
-# Snake Game with Pygame
+🐍 Jogo da Cobrinha com Pygame
 
-A classic Snake game implemented in Python using Pygame, designed with Object-Oriented Programming principles and clean code. This project features a retro-style brown and green checkerboard background, smooth gameplay, and an intuitive interface with pause/start and restart after game over.
+Um jogo clássico da cobrinha implementado em Python usando Pygame, desenvolvido com princípios de programação orientada a objetos e código limpo. Este projeto apresenta um visual retrô com tabuleiro marrom e verde em xadrez, jogabilidade suave e uma interface intuitiva com pausa/início e reinício após o fim do jogo.
+
+🏋️‍♂️ Estilo e Temática Divertida
+Para deixar o jogo mais descontraído e personalizado, o grupo resolveu estilizar a clássica cobrinha com uma brincadeira:
+o personagem principal é uma foto de um discente da disciplina — conhecido por gostar de treinar musculação — e o objetivo do jogo é "comer" pesos de academia espalhados pelo tabuleiro.
+
+A cada peso coletado:
+
+- Um som é reproduzido, simulando a pegada de um novo item.
+
+- O corpo do personagem cresce, seguindo a lógica original do jogo da cobrinha.
+
+Essa customização dá um toque de humor e originalidade ao projeto, sem comprometer a jogabilidade clássica.
+---
+
+## Funcionalidades
+
+Jogabilidade clássica da cobrinha.
+
+Design orientado a objetos para facilitar a manutenção.
+
+Código limpo e bem documentado com docstrings em inglês.
+
+Fundo em estilo retrô com padrão xadrez marrom e bordas verdes.
+
+Células da cobrinha e da comida menores que os quadrados do fundo, criando um efeito de contorno elegante.
+
+O jogo começa após pressionar uma tecla.
+
+Exibe a mensagem "Game Over" sem fechar a janela.
+
+Opção de reiniciar o jogo após perder.
+
+Controles responsivos e animações suaves.
 
 ---
 
-## Features
+## Requisitos
 
-- Classic Snake gameplay.
-- Object-Oriented design for maintainability.
-- Clean, well-documented code with English docstrings.
-- Retro-style brown checkerboard background with green borders.
-- Snake and food cells smaller than background squares for a neat contour effect.
-- Game starts after a key press.
-- Displays "Game Over" message without closing the window.
-- Option to restart the game after losing.
-- Responsive controls and smooth animations.
-
----
-
-## Requirements
-
-- Python 3.7 or newer
+- Python 3.7 ou newer
 - [Pygame](https://www.pygame.org/news)
 
 ---
 
-## Installation
+## Instalação
 
-1. Clone the repository:
+1. Clone do repositório:
 
 ```bash
 git clone https://github.com/yourusername/snake-pygame.git
 cd snake-pygame
 
-2. Create a virtual environment (optional but recommended):
+2. Cire um ambiente virtual (opcional mas recomendado):
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Install dependencies:
+3. Instale as dependências:
 
 ```bash
 pip install pygame
@@ -48,7 +67,7 @@ pip install pygame
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 snake-pygame/
@@ -63,40 +82,28 @@ snake-pygame/
 
 ---
 
-## How to Run
+## Como rodar
 
-Run the main game script:
+Rode o script principal do jogo:
 
 ```bash
 python main.py
 ```
 
-* The game will start with a black screen and the message:
+* O jogo começará com uma tela preta e a mensagem:
 
-  > *Press any key to start*
+  > *Pressione qualquer tecla para começar*
 
-* Use arrow keys or WASD to control the snake.
+* Use as setas do teclado ou as teclas WASD para controlar a cobrinha.
 
-* Eat the white food to grow.
+* Coma os pesos de academia para crescer.
 
-* Avoid hitting walls or the snake’s own body.
+* Evite bater nas paredes ou no próprio corpo da cobrinha.
 
-* When the game ends, a *Game Over* message appears.
+* Quando o jogo terminar, uma mensagem de Game Over será exibida.
 
-* Press **R** to restart.
-
----
-
-## Contribution
-
-Feel free to fork the repository, open issues or submit pull requests to improve the game!
+* Pressione R para reiniciar o jogo.
 
 ---
 
-## License
-
-This project is open source and available under the MIT License.
-
----
-
-Enjoy playing the classic Snake game!
+🎉 Divirta-se jogando o clássico Jogo da Cobrinha!
