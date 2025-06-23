@@ -13,7 +13,6 @@ A cada peso coletado:
 
 - O corpo do personagem cresce, seguindo a lógica original do jogo da cobrinha.
 
-Essa customização dá um toque de humor e originalidade ao projeto, sem comprometer a jogabilidade clássica.
 ---
 
 ## Funcionalidades
