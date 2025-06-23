@@ -3,8 +3,9 @@
 Um jogo clássico da cobrinha implementado em Python usando Pygame, desenvolvido com princípios de programação orientada a objetos e código limpo. Este projeto apresenta um visual retrô com tabuleiro marrom e verde em xadrez, jogabilidade suave e uma interface intuitiva com pausa/início e reinício após o fim do jogo.
 
 🏋️‍♂️ Estilo e Temática Divertida
+
 Para deixar o jogo mais descontraído e personalizado, o grupo resolveu estilizar a clássica cobrinha com uma brincadeira:
-o personagem principal é uma foto de um discente da disciplina — conhecido por gostar de treinar musculação — e o objetivo do jogo é "comer" pesos de academia espalhados pelo tabuleiro.
+o personagem principal é uma foto do professor da disciplina — conhecido por gostar de treinar musculação — e o objetivo do jogo é "comer" pesos de academia espalhados pelo tabuleiro.
 
 A cada peso coletado:
 
