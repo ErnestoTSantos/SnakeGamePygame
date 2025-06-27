@@ -4,8 +4,9 @@ Um jogo clássico da cobrinha implementado em Python usando Pygame, desenvolvido
 
 🏋️‍♂️ Estilo e Temática Divertida
 
-Para deixar o jogo mais descontraído e personalizado, o grupo resolveu estilizar a clássica cobrinha com uma brincadeira:
-o personagem principal é uma foto do professor da disciplina — conhecido por gostar de treinar musculação — e o objetivo do jogo é "comer" pesos de academia espalhados pelo tabuleiro.
+Para deixar o jogo mais descontraído e personalizado, o grupo resolveu estilizar a clássica cobrinha com uma brincadeira: o personagem principal é uma foto do professor da disciplina — conhecido por gostar de treinar musculação — e o objetivo do jogo é "comer" pesos de academia espalhados pelo tabuleiro.
+Essa escolha trouxe leveza e bom humor à proposta, tornando a experiência mais divertida e única para quem joga.
+
 
 A cada peso coletado:
 
